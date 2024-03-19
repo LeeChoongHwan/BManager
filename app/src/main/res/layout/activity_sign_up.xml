@@ -4,28 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignInActivity">
+    tools:context=".SignUpActivity">
 
-    <TextView
-        android:id="@+id/tv_logo"
+    <ImageView
+        android:id="@+id/iv_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:text="@string/signIn_logo"
-        android:textSize="48sp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="24dp"
+        android:src="@drawable/ic_btn_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signUp_tv_title"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_back" />
 
     <TextView
         android:id="@+id/tv_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="@string/signIn_tv_email"
+        android:text="@string/signUp_tv_email"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@id/et_email"
-        app:layout_constraintTop_toBottomOf="@id/tv_logo" />
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
 
     <EditText
         android:id="@+id/et_email"
@@ -42,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="@string/signIn_tv_password"
+        android:text="@string/signUp_tv_password"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@id/et_email"
         app:layout_constraintTop_toBottomOf="@id/et_email" />
@@ -57,25 +66,55 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_password" />
 
+    <TextView
+        android:id="@+id/tv_password_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/signUp_tv_password_check"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/et_email"
+        app:layout_constraintTop_toBottomOf="@id/et_password" />
+
+    <EditText
+        android:id="@+id/et_password_check"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password_check" />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/signUp_tv_nickname"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/et_email"
+        app:layout_constraintTop_toBottomOf="@id/et_password_check" />
+
+    <EditText
+        android:id="@+id/et_nickname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="60dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nickname" />
+
     <Button
         android:id="@+id/btn_sign_in"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="60dp"
         android:layout_marginTop="60dp"
-        android:text="@string/signIn_btn_sign_in"
+        android:text="@string/signUp_btn_sign_up"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/et_password" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="@string/signIn_tv_sign_up"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_sign_in" />
-
+        app:layout_constraintTop_toBottomOf="@id/et_nickname" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
