@@ -7,4 +7,12 @@
     <string name="signIn_tv_password">비밀번호</string>
     <string name="signIn_btn_sign_in">로그인</string>
     <string name="signIn_tv_sign_up">계정이 없으신가요? 회원가입하러가기</string>
+
+    <!--signUp layout-->
+    <string name="signUp_tv_title">회원가입</string>
+    <string name="signUp_tv_email">이메일</string>
+    <string name="signUp_tv_password">비밀번호</string>
+    <string name="signUp_tv_password_check">비밀번호 확인</string>
+    <string name="signUp_tv_nickname">닉네임</string>
+    <string name="signUp_btn_sign_up">회원가입</string>
 </resources>
