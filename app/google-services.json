@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "92175669174",
+    "project_id": "bmanager-34b24",
+    "storage_bucket": "bmanager-34b24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:92175669174:android:55d96fcf6a8258d2289317",
+        "android_client_info": {
+          "package_name": "com.choong.bmanager_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv9VrplcA8RN-8JdEIhygWJoBOHxB9h9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
