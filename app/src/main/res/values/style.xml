@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="confirmButton">
+        <item name="marginHorizontal">60dp</item>
+    </style>
+
+    <style name="editText">
+        <item name="marginHorizontal">60dp</item>
+    </style>
+</resources>
